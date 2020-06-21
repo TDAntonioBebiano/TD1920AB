@@ -1,0 +1,171 @@
+<%- include('_header') %>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+img{
+    height: 400px;
+
+}
+
+.Team-description{
+    background: #181818;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.sust-img{
+    background-image: url('img/future.jpg');
+    padding: 180px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+</style>
+
+
+<div class="sust-img">
+<h1>About</h1> 
+</div>
+
+<div>
+<div class="about-section">
+    <br>
+
+  <h2>University of Coimbra</h2>
+  <p>A centre of learning, par excellence, the University of Coimbra was founded in 1290 and is one of the oldest in Europe, and was classified World heritage site by UNESCO; this classification includes also the Uptown and Sofia Street.
+    Founded in 1290 by Dom Dinis, with the name of "Estudos Gerais" (General Studies), the University was transferred between Lisbon and Coimbra during the reigns of several monarchs until it was definitively established in this city in 1537, by Dom João III. Since then, it has continued to occupy the same building, the former mediaeval 
+    royal palace, acquired by the university in 1597 from Filipe II of Spain, who also ruled over Portugal at that time.</p>
+  <hr><hr>
+  <h2>FCTUC</h2>
+  <p>The Faculty of Science and Technology of the University of Coimbra (FCTUC), located in Coimbra, Portugal, is 
+      the largest faculty of the University of Coimbra (UC). FCTUC is dedicated to teaching and research in the areas of
+       Architecture, Natural Sciences, Engineering and Mathematics. 
+      The faculty has pedagogical and administrative autonomy within the UC.</p>
+  <hr><hr>
+  <h2>DEI</h2>
+  <p>Department of Computer Engineering</p>
+  <hr><hr>
+  <h2>The Project</h2>
+  <p>Proposed as Transition Design / Service Design / User Experience exercise, we will address the 
+      question of designing a participatory online canvas to enable a set of stakeholders to engage in a Transition Design process. This will be achieved through a set of shared web canvases accessible with a web browser. This will take the form of an online web-based self-service that, with the simplicity of filling out forms or drawing on visual canvases, commenting, etc., can support issue raising, 
+      problem setting, debating and proposal of solutions in a participatory and playful manner.</p>
+
+
+
+</div>
+
+<div class="Team-description">
+    
+    <br>
+<h2 style="text-align:center; color:white">Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/AntonioBebiano.jpg" alt="Antonio" style="width:100%">
+      <div class="container">
+        <h2>António Bebiano</h2>
+        <p class="title">Developer</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/MarianaSantos.jpg" alt="Mariana" style="width:100%">
+      <div class="container">
+        <h2>Mariana Santos</h2>
+        <p class="title">Designer</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img/AndrianaPeresta.jpg" alt="Andriana" style="width:100%">
+      <div class="container">
+        <h2>Andriana Peresta</h2>
+        <p class="title">Designer</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img/LicinioRoque.jpg" alt="Licínio" style="width:100%">
+      <div class="container">
+        <h2>Licínio Roque</h2>
+        <p class="title">Project Manager</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

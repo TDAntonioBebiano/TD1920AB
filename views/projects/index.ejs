@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .title{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title mt-4">Projects</h1>
+        <a href="/projects/new" class="btn btn-success"> new Proj</a>
+    
+
+    <% projects.forEach(function(project) { %>
+        <div class="card mt-4">
+                <div class="card-body">
+                    <h4 class="card-title"><%= project.title %></h4>
+                    <div class="card-subtitle text-muted mb-2">
+                        <%= project.createdAt.toLocaleDateString() %>
+                    <div class="card-text mb-2"><%= project.description %></div>
+                    
+                    <a href="projects/<%= project.slug %>" class="btn btn-success">Enter</a>
+                    
+                    <a href="projects/edit/<%= project.id %>" class="btn btn-info">Edit</a>
+                    
+
+                    <form class="d-inline" action="/projects/<%=project.id %>?_method=DELETE" method="POST">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+        <% }) %>
+
+        </div>
+</body>
+</html>

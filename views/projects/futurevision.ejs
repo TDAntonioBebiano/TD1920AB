@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    
+    <%- include('_nav_proj') %>
+    
+
+    <a href="http://localhost:7007/new?prototype=futureVision&id=<%=project.id %>-FutureVision" class="btn btn-dark form-control">Start</a>
+       
+    <iframe src="http://localhost:7007/<%=project.id %>-FutureVision" height="500" width="100%"></iframe>
+
+    <a href="http://localhost:7007/<%=project.id %>-FutureVision" class="btn btn-dark mt-2">Webstrate</a>
+    <a href="http://localhost:7007/<%=project.id %>-FutureVision?delete" class="btn btn-dark mt-2">Delete</a>
+
+    
+    
+</body>
+</html>

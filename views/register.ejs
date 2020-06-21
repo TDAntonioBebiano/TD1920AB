@@ -1,0 +1,56 @@
+
+<%- include('_header') %>
+
+<style>
+ .sust-Log{
+    background-image: url('img/idea.png');
+    padding: 180px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+    .corpo{
+        background-color: #474e5d;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 400px;
+        padding-right: 400px;
+        }
+
+</style>
+
+
+<div class="sust-Log">
+<h1>Register</h1>
+</div>
+
+<div>
+<div class="corpo">
+    <div class="register">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                <form action="" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" class="form-control" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="form-control" required>
+                    <label for="senha">PassWord:</label>
+                    <input type="password" name="senha" class="form-control" required>
+                    <label for="senha2">PassWord:</label>
+                    <input type="password" name="senha2" class="form-control" required>
+                    <button type="submit" class="btn btn-dark mt-4 form-control">Submit</button>
+                </form>
+                <a href="/login"><button class="btn btn-dark mt-2">login</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<%- include('_footer') %>
+</div>
